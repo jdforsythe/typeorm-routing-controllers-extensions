@@ -1,6 +1,6 @@
 # routing-controllers integration with TypeORM
 
-This extension for TypeORM provides handy decorators that can be used with 
+This extension for TypeORM provides handy decorators that can be used with
 [routing-controllers](https://github.com/pleerock/routing-controllers).
 
 ## Installation
@@ -156,6 +156,10 @@ for example if you are using array of entities it should be passed explicitly.
 * `property: boolean`
 
 Property to find by. If not specified, then entity will be fetched by its primary keys.
+
+* `property: validate`
+
+`ValidatorOptions` from `class-validator` to use when validating the entity.
 
 ## Samples
 

@@ -20,6 +20,7 @@ export function EntityFromBodyParam(paramName: string, options?: EntityParamOpti
             type: "body-param",
             parse: options && options.parse,
             required: options && options.required,
+            validate: options && options.validate,
             transform: (actionProperties, value) => {
                 if (value === undefined || value === null) return undefined;
 

@@ -1,3 +1,5 @@
+import { ValidatorOptions } from "class-validator";
+
 /**
  * Entity transformation options.
  */
@@ -30,5 +32,11 @@ export interface EntityParamOptions {
      * Property to find by. If not specified, then entity will be fetched by its primary keys.
      */
     property?: string;
+
+    /**
+     * Options for use for class-validator when validating the entity.
+     */
+
+    validate?: ValidatorOptions;
 
 }

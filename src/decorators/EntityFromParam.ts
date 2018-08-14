@@ -19,6 +19,7 @@ export function EntityFromParam(paramName: string, options?: EntityParamOptions)
             type: "param",
             parse: options && options.parse,
             required: options && options.required,
+            validate: options && options.validate,
             transform: (actionProperties, value) => entityTransform(value, target, isArray, options)
         });
     };

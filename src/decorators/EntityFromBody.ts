@@ -22,6 +22,7 @@ export function EntityFromBody(options?: EntityParamOptions) {
             type: "body",
             parse: options && options.parse,
             required: options && options.required,
+            validate: options && options.validate,
             transform: (action: Action, value: any) => {
                 const connection = getConnection(options ? options.connection : undefined);
 
